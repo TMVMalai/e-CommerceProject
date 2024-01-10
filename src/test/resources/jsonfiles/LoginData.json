@@ -1,0 +1,12 @@
+{
+	"signupFunctionality": [
+		{
+			"firstName": "Thiru",
+			"lastName": "malai",
+			"email": "tperumal2205@gmail.com",
+			"password": "TestUser#123",
+			"reenterPassword": "TestUser#123",
+			"phone": "6379616155"
+		}
+	]
+}

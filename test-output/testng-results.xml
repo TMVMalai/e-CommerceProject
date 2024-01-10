@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-10T12:31:37 IST" name="Default suite" finished-at="2024-01-10T12:31:38 IST" duration-ms="1052">
+    <groups>
+      <group name="Regression">
+        <method signature="LinkBrokenOrNotTest.LinkBrokenorNot()[pri:0, instance:testCases.LinkBrokenOrNotTest@2cb4893b]" name="LinkBrokenorNot" class="testCases.LinkBrokenOrNotTest"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2024-01-10T12:31:37 IST" name="Default test" finished-at="2024-01-10T12:31:38 IST" duration-ms="1052">
+      <class name="testCases.LinkBrokenOrNotTest">
+        <test-method is-config="true" signature="suiteSetup()[pri:0, instance:testCases.LinkBrokenOrNotTest@2cb4893b]" started-at="2024-01-10T12:31:02 IST" name="suiteSetup" finished-at="2024-01-10T12:31:37 IST" duration-ms="34744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteSetup -->
+        <test-method signature="LinkBrokenorNot()[pri:0, instance:testCases.LinkBrokenOrNotTest@2cb4893b]" started-at="2024-01-10T12:31:37 IST" name="LinkBrokenorNot" finished-at="2024-01-10T12:31:38 IST" duration-ms="881" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LinkBrokenorNot -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testCases.LinkBrokenOrNotTest@2cb4893b]" started-at="2024-01-10T12:31:38 IST" name="close" finished-at="2024-01-10T12:31:38 IST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testCases.LinkBrokenOrNotTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
