@@ -22,6 +22,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import ecommerce.constants.FrameWorkConstants;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -164,6 +165,4 @@ public class UtilityClasses {
 	       int ResponseCode = response.statusCode();
 	       return ResponseCode;
 	}
-
-
 }

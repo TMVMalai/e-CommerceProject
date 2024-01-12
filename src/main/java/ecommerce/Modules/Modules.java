@@ -1,21 +1,17 @@
 package ecommerce.Modules;
-
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertNotEquals;
-
 import java.util.ArrayList;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import ecommerce.pages.MenuPage;
 import ecommerce.pages.RegistrationPage;
+import utils.UtilityClasses;
 
-public class Modules {
+public class Modules extends UtilityClasses{
 	WebDriver driver;
 	MenuPage menuPage;
 	RegistrationPage registrationPage;
@@ -39,11 +35,11 @@ public class Modules {
 			for (int j = num; j < titleValues.length;) {
 				menuPage.ClickelementbyTitle(titleNames[i], titleValues[j]);
 				if (titleNames[i].equalsIgnoreCase("Deals")) {
-					assertEquals(titleValues[j], menuPage.getTextUsingTitle(titleValues[j]));
+					Assert.assertEquals(titleValues[j],menuPage.getTextUsingTitle(titleValues[j]));
 				} else if (titleNames[i].equalsIgnoreCase("Support & Services")) {
-					assertEquals(data.get("SupportStatement").toString(), menuPage.getTextSupport());
+					Assert.assertEquals(data.get("SupportStatement").toString(), menuPage.getTextSupport());
 				} else {
-					assertEquals(titleValues[j], menuPage.getAttribute(titleValues[j]));
+					Assert.assertEquals(titleValues[j], menuPage.getAttribute(titleValues[j]));
 				}
 				num = j + 1;
 				break;
@@ -64,9 +60,9 @@ public class Modules {
 				menuPage.clicktitle(DepartmentNames[j]);
 				menuPage.ClickelementbyTitle(DepartmentNames[i], dropdownList[j]);
 				if (Department[i].equalsIgnoreCase("Appliances")) {
-					assertEquals(DepartmentNames[j], menuPage.getTextUsingDepartmentName(DepartmentNames[j]));
+					Assert.assertEquals(DepartmentNames[j], menuPage.getTextUsingDepartmentName(DepartmentNames[j]));
 				} else {
-					assertEquals(DepartmentNames[j], menuPage.getTextUsingDepartmentName(DepartmentNames[j]));
+					Assert.assertEquals(DepartmentNames[j], menuPage.getTextUsingDepartmentName(DepartmentNames[j]));
 				}
 				num = j + 1;
 				break;
@@ -77,7 +73,7 @@ public class Modules {
 
 	public void searchItem() {
 		menuPage.searchArea(data.get("SearchText").toString());
-		assertEquals(data.get("SearchText").toString(), menuPage.getTextSearchItem(data.get("SearchText").toString()));
+		Assert.assertEquals(data.get("SearchText").toString(), menuPage.getTextSearchItem(data.get("SearchText").toString()));
 	}
 
 	public void productSelection() {
@@ -140,7 +136,7 @@ public class Modules {
 		for (String data : products) {
 			getproductsData.add(menuPage.getCartProducts(data).toString());
 		}
-		assertEquals(getproductsData.toArray(), products);
+		Assert.assertEquals(getproductsData.toArray(), products);
 		menuPage.clickCheckoutButton();
 		menuPage.ScrollandClickContinueButton();
 		String[] paymentDetail = paymentDetails.get("TextArea").toString().split(",");
@@ -157,9 +153,9 @@ public class Modules {
 	public void linkbrokenorNot() throws Exception {
 		System.out.println(menuPage.urlResponseCode());
 		if (menuPage.urlResponseCode() == 200) {
-			assertEquals(menuPage.urlResponseCode(), 200);
+			Assert.assertEquals(menuPage.urlResponseCode(), 200);
 		} else {
-			assertNotEquals(menuPage.urlResponseCode(), 200);
+			Assert.assertNotEquals(menuPage.urlResponseCode(), 200);
 		}
 	}
 }
