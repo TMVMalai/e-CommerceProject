@@ -9,9 +9,9 @@ import org.testng.Assert;
 
 import ecommerce.pages.MenuPage;
 import ecommerce.pages.RegistrationPage;
-import utils.UtilityClasses;
 
-public class Modules extends UtilityClasses{
+
+public class Modules {
 	WebDriver driver;
 	MenuPage menuPage;
 	RegistrationPage registrationPage;
