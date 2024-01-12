@@ -15,7 +15,7 @@ import org.openqa.selenium.WebDriver;
 import ecommerce.pages.MenuPage;
 import ecommerce.pages.RegistrationPage;
 
-public class Modules extends utils.UtilityClasses {
+public class Modules {
 	WebDriver driver;
 	MenuPage menuPage;
 	RegistrationPage registrationPage;

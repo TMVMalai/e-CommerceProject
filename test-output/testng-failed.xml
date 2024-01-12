@@ -8,6 +8,7 @@
           <include name="suiteSetup"/>
           <include name="selectProducts"/>
           <include name="close"/>
+          <include name="validatePageNavigation"/>
           <include name="login"/>
         </methods>
       </class> <!-- testCases.DemoClass -->
