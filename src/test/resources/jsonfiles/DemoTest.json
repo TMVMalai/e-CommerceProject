@@ -19,7 +19,7 @@
 			"ProductName": "AirPods (2nd gen)",
 			"product": "Ninja - Professional Plus Blender with Auto-iQ - Gray",
 			"CartProducts": "Apple - AirPods with Charging Case (2nd generation) - White,Apple - AirPods Pro (2nd generation) with MagSafe Case (USB‑C) - White,Ninja - Professional Plus Blender with Auto-iQ - Gray",
-			"TextArea": "number,firstName,lastName,addressLine1,city,state,postalCode"
+			"TextArea": "Credit or Debit Card Number,number,firstName,lastName,addressLine1,city,state,postalCode"
 		},
 		{
 			"paymentInformation": {

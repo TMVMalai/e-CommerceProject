@@ -1,4 +1,5 @@
 package ecommerce.Modules;
+
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotEquals;
 
@@ -6,16 +7,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
-
 import ecommerce.pages.MenuPage;
 import ecommerce.pages.RegistrationPage;
 
-
-public class Modules{
+public class Modules {
 	WebDriver driver;
 	MenuPage menuPage;
 	RegistrationPage registrationPage;
@@ -39,7 +39,7 @@ public class Modules{
 			for (int j = num; j < titleValues.length;) {
 				menuPage.ClickelementbyTitle(titleNames[i], titleValues[j]);
 				if (titleNames[i].equalsIgnoreCase("Deals")) {
-					assertEquals(titleValues[j],menuPage.getTextUsingTitle(titleValues[j]));
+					assertEquals(titleValues[j], menuPage.getTextUsingTitle(titleValues[j]));
 				} else if (titleNames[i].equalsIgnoreCase("Support & Services")) {
 					assertEquals(data.get("SupportStatement").toString(), menuPage.getTextSupport());
 				} else {
@@ -77,7 +77,8 @@ public class Modules{
 
 	public void searchItem() {
 		menuPage.searchArea(data.get("SearchText").toString());
-		Assert.assertEquals(data.get("SearchText").toString(), menuPage.getTextSearchItem(data.get("SearchText").toString()));
+		Assert.assertEquals(data.get("SearchText").toString(),
+				menuPage.getTextSearchItem(data.get("SearchText").toString()));
 	}
 
 	public void productSelection() {
@@ -144,14 +145,18 @@ public class Modules{
 		menuPage.clickCheckoutButton();
 		menuPage.ScrollandClickContinueButton();
 		String[] paymentDetail = paymentDetails.get("TextArea").toString().split(",");
+		int num = 0;
 		for (int i = 0; i < paymentDetail.length; i++) {
-			for (Map.Entry<String, Object> entry : paymentinformation.entrySet()) {
+			for (int j = num; j < paymentinformation.size();) {
+				Map.Entry<String, Object> entry = (Entry<String, Object>) paymentinformation.entrySet();
 				if (entry.getKey().equalsIgnoreCase(paymentDetail[i])) {
 					menuPage.sendOrderInformation(paymentDetail[i], entry.getValue().toString());
 				}
+				num = j + 1;
 				break;
 			}
 		}
+		menuPage.clickPlaceOrder();
 	}
 
 	public void linkbrokenorNot() throws Exception {

@@ -46,6 +46,9 @@ public class MenuPage extends utils.UtilityClasses {
 	@FindBy(xpath = "//span[text()='Continue to Payment Information']")
 	private WebElement buttonContinue;
 	
+	@FindBy(xpath = "//span[text()='Place Your Order']")
+	private WebElement buttonPlaceOrder;
+	
 
 	//input[@name='firstName']
 
@@ -204,7 +207,10 @@ public class MenuPage extends utils.UtilityClasses {
 		Dropdown.sendKeys(name);
 		driver.findElement(By.xpath("//*[@name='"+Dropdown+"']")).click();
 		return name;
-		
+	}
+	
+	public void clickPlaceOrder() {
+		buttonPlaceOrder.click();
 	}
 
 }

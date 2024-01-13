@@ -10,7 +10,7 @@ import ecommerce.DDD.dataproviders.DataProviderClasses;
 import ecommerce.Modules.Modules;
 
 
-public class DemoClass extends CommonFunctions {
+public class PageNavigationAndProductValidationTest extends CommonFunctions {
 	
 	
 	@BeforeMethod

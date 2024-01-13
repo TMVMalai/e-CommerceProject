@@ -55,7 +55,7 @@ public class UtilityClasses {
 		case "chrome":
 			WebDriverManager.chromedriver().driverVersion("latest").setup();
 			ChromeOptions chromeOptions = new ChromeOptions();
-			//chromeOptions.addArguments(prop.getProperty("browserMode"));
+			chromeOptions.addArguments(prop.getProperty("browserMode"));
 			chromeOptions.setPageLoadStrategy(PageLoadStrategy.EAGER);
 			driver = new ChromeDriver(chromeOptions);
 			break;
