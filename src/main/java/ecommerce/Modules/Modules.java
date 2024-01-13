@@ -1,17 +1,21 @@
 package ecommerce.Modules;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNotEquals;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
+
 
 import ecommerce.pages.MenuPage;
 import ecommerce.pages.RegistrationPage;
 
 
-public class Modules {
+public class Modules{
 	WebDriver driver;
 	MenuPage menuPage;
 	RegistrationPage registrationPage;
@@ -35,11 +39,11 @@ public class Modules {
 			for (int j = num; j < titleValues.length;) {
 				menuPage.ClickelementbyTitle(titleNames[i], titleValues[j]);
 				if (titleNames[i].equalsIgnoreCase("Deals")) {
-					Assert.assertEquals(titleValues[j],menuPage.getTextUsingTitle(titleValues[j]));
+					assertEquals(titleValues[j],menuPage.getTextUsingTitle(titleValues[j]));
 				} else if (titleNames[i].equalsIgnoreCase("Support & Services")) {
-					Assert.assertEquals(data.get("SupportStatement").toString(), menuPage.getTextSupport());
+					assertEquals(data.get("SupportStatement").toString(), menuPage.getTextSupport());
 				} else {
-					Assert.assertEquals(titleValues[j], menuPage.getAttribute(titleValues[j]));
+					assertEquals(titleValues[j], menuPage.getAttribute(titleValues[j]));
 				}
 				num = j + 1;
 				break;
@@ -60,9 +64,9 @@ public class Modules {
 				menuPage.clicktitle(DepartmentNames[j]);
 				menuPage.ClickelementbyTitle(DepartmentNames[i], dropdownList[j]);
 				if (Department[i].equalsIgnoreCase("Appliances")) {
-					Assert.assertEquals(DepartmentNames[j], menuPage.getTextUsingDepartmentName(DepartmentNames[j]));
+					assertEquals(DepartmentNames[j], menuPage.getTextUsingDepartmentName(DepartmentNames[j]));
 				} else {
-					Assert.assertEquals(DepartmentNames[j], menuPage.getTextUsingDepartmentName(DepartmentNames[j]));
+					assertEquals(DepartmentNames[j], menuPage.getTextUsingDepartmentName(DepartmentNames[j]));
 				}
 				num = j + 1;
 				break;
@@ -136,7 +140,7 @@ public class Modules {
 		for (String data : products) {
 			getproductsData.add(menuPage.getCartProducts(data).toString());
 		}
-		Assert.assertEquals(getproductsData.toArray(), products);
+		assertEquals(getproductsData.toArray(), products);
 		menuPage.clickCheckoutButton();
 		menuPage.ScrollandClickContinueButton();
 		String[] paymentDetail = paymentDetails.get("TextArea").toString().split(",");
@@ -153,9 +157,9 @@ public class Modules {
 	public void linkbrokenorNot() throws Exception {
 		System.out.println(menuPage.urlResponseCode());
 		if (menuPage.urlResponseCode() == 200) {
-			Assert.assertEquals(menuPage.urlResponseCode(), 200);
+			assertEquals(menuPage.urlResponseCode(), 200);
 		} else {
-			Assert.assertNotEquals(menuPage.urlResponseCode(), 200);
+			assertNotEquals(menuPage.urlResponseCode(), 200);
 		}
 	}
 }
