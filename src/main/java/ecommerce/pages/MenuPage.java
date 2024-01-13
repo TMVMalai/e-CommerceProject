@@ -210,6 +210,8 @@ public class MenuPage extends utils.UtilityClasses {
 	}
 	
 	public void clickPlaceOrder() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,300)");
 		buttonPlaceOrder.click();
 	}
 
