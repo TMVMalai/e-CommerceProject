@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-13T10:49:38 IST" name="Default suite" finished-at="2024-01-13T10:49:38 IST" duration-ms="49">
+  <suite started-at="2024-01-14T18:17:12 IST" name="Default suite" finished-at="2024-01-14T18:17:22 IST" duration-ms="10086">
     <groups>
       <group name="Regression">
-        <method signature="DemoClass.selectProducts(java.lang.Object)[pri:0, instance:testCases.DemoClass@79924b]" name="selectProducts" class="testCases.DemoClass"/>
+        <method signature="PageNavigationAndProductValidationTest.validatePageNavigation(java.lang.Object)[pri:0, instance:testCases.PageNavigationAndProductValidationTest@6b927fb]" name="validatePageNavigation" class="testCases.PageNavigationAndProductValidationTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-01-13T10:49:38 IST" name="Default test" finished-at="2024-01-13T10:49:38 IST" duration-ms="49">
-      <class name="testCases.DemoClass">
-        <test-method is-config="true" signature="suiteSetup()[pri:0, instance:testCases.DemoClass@79924b]" started-at="2024-01-13T10:48:37 IST" name="suiteSetup" finished-at="2024-01-13T10:49:38 IST" duration-ms="60706" status="PASS">
+    <test started-at="2024-01-14T18:17:12 IST" name="Default test" finished-at="2024-01-14T18:17:22 IST" duration-ms="10086">
+      <class name="testCases.PageNavigationAndProductValidationTest">
+        <test-method is-config="true" signature="suiteSetup()[pri:0, instance:testCases.PageNavigationAndProductValidationTest@6b927fb]" started-at="2024-01-14T18:16:42 IST" name="suiteSetup" finished-at="2024-01-14T18:17:12 IST" duration-ms="29690" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteSetup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.DemoClass@79924b]" started-at="2024-01-13T10:49:38 IST" name="login" finished-at="2024-01-13T10:49:38 IST" duration-ms="8" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method is-config="true" signature="login()[pri:0, instance:testCases.PageNavigationAndProductValidationTest@6b927fb]" started-at="2024-01-14T18:17:12 IST" name="login" finished-at="2024-01-14T18:17:22 IST" duration-ms="10051" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.216)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Account']"}
+  (Session info: chrome-headless-shell=120.0.6099.216)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1.2', java.version: '21'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [941481b4ff8122f80c5da8e2f2784bec, findElement {using=xpath, value=//span[text()='Account']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.216, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/36/0j05svmj3bl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64803}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64803/devtoo..., se:cdpVersion: 120.0.6099.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 941481b4ff8122f80c5da8e2f2784bec]]>
+Command: [b74c598be16c41a1e611159a214d9007, findElement {using=xpath, value=//span[text()='Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 120.0.6099.216, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/36/0j05svmj3bl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61938}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61938/devtoo..., se:cdpVersion: 120.0.6099.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b74c598be16c41a1e611159a214d9007]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.216)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Account']"}
+  (Session info: chrome-headless-shell=120.0.6099.216)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1.2', java.version: '21'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [941481b4ff8122f80c5da8e2f2784bec, findElement {using=xpath, value=//span[text()='Account']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.216, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/36/0j05svmj3bl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64803}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64803/devtoo..., se:cdpVersion: 120.0.6099.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 941481b4ff8122f80c5da8e2f2784bec
+Command: [b74c598be16c41a1e611159a214d9007, findElement {using=xpath, value=//span[text()='Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 120.0.6099.216, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/36/0j05svmj3bl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61938}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61938/devtoo..., se:cdpVersion: 120.0.6099.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b74c598be16c41a1e611159a214d9007
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -52,7 +52,7 @@ at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:5
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
 at baseFunctions.CommonFunctions.loginSetup(CommonFunctions.java:21)
-at testCases.DemoClass.login(DemoClass.java:18)
+at testCases.PageNavigationAndProductValidationTest.login(PageNavigationAndProductValidationTest.java:18)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -85,40 +85,40 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="selectProducts(java.lang.Object)[pri:0, instance:testCases.DemoClass@79924b]" started-at="2024-01-13T10:49:38 IST" name="selectProducts" data-provider="getJsonData" finished-at="2024-01-13T10:49:38 IST" duration-ms="0" status="SKIP">
+        <test-method signature="validatePageNavigation(java.lang.Object)[pri:0, instance:testCases.PageNavigationAndProductValidationTest@6b927fb]" started-at="2024-01-14T18:17:22 IST" name="validatePageNavigation" data-provider="getJsonData" finished-at="2024-01-14T18:17:22 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{BrandName=AirPods, TitleValues=Small Kitchen Appliances,Apple, product=Ninja - Professional Plus Blender with Auto-iQ - Gray, DropdownList=Small Kitchen Appliance Deals, ProductName=AirPods (2nd gen), TextArea=number,firstName,lastName,addressLine1,city,state,postalCode, TitleNames=Appliances,Brands, CartProducts=Apple - AirPods with Charging Case (2nd generation) - White,Apple - AirPods Pro (2nd generation) with MagSafe Case (USB‑C) - White,Ninja - Professional Plus Blender with Auto-iQ - Gray}]]>
+                <![CDATA[{TitleValues=Top Deals,Visit our Support Center,Apple, Departments=Appliances,Video Games, DropdownList=Small Kitchen Appliance Deals,PlayStation 5 Consoles, TitleNames=Deals,Support & Services,Brands, DepartmentValues=Small Kitchen Appliances,PlayStation 5, SupportStatement=Best Buy Support, SearchText=Apple - AirPods Pro (2nd generation) with MagSafe Case (USB‑C) - White}]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.216)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Account']"}
+  (Session info: chrome-headless-shell=120.0.6099.216)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1.2', java.version: '21'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [941481b4ff8122f80c5da8e2f2784bec, findElement {using=xpath, value=//span[text()='Account']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.216, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/36/0j05svmj3bl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64803}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64803/devtoo..., se:cdpVersion: 120.0.6099.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 941481b4ff8122f80c5da8e2f2784bec]]>
+Command: [b74c598be16c41a1e611159a214d9007, findElement {using=xpath, value=//span[text()='Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 120.0.6099.216, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/36/0j05svmj3bl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61938}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61938/devtoo..., se:cdpVersion: 120.0.6099.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b74c598be16c41a1e611159a214d9007]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.216)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Account']"}
+  (Session info: chrome-headless-shell=120.0.6099.216)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1.2', java.version: '21'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [941481b4ff8122f80c5da8e2f2784bec, findElement {using=xpath, value=//span[text()='Account']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.216, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/36/0j05svmj3bl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64803}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64803/devtoo..., se:cdpVersion: 120.0.6099.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 941481b4ff8122f80c5da8e2f2784bec
+Command: [b74c598be16c41a1e611159a214d9007, findElement {using=xpath, value=//span[text()='Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 120.0.6099.216, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/36/0j05svmj3bl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61938}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61938/devtoo..., se:cdpVersion: 120.0.6099.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b74c598be16c41a1e611159a214d9007
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -134,7 +134,7 @@ at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:5
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
 at baseFunctions.CommonFunctions.loginSetup(CommonFunctions.java:21)
-at testCases.DemoClass.login(DemoClass.java:18)
+at testCases.PageNavigationAndProductValidationTest.login(PageNavigationAndProductValidationTest.java:18)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -167,105 +167,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectProducts -->
-        <test-method is-config="true" signature="close()[pri:0, instance:testCases.DemoClass@79924b]" started-at="2024-01-13T10:49:38 IST" name="close" finished-at="2024-01-13T10:49:38 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method signature="selectProducts(java.lang.Object)[pri:0, instance:testCases.DemoClass@79924b]" started-at="2024-01-13T10:49:38 IST" name="selectProducts" data-provider="getJsonData" finished-at="2024-01-13T10:49:38 IST" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{paymentInformation={number=0002 2341 1234, firstName=Test, lastName=User, city=Texas, postalCode=000222, addressLine1=UnitedStates, state=SanAntino}}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.216)
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1.2', java.version: '21'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [941481b4ff8122f80c5da8e2f2784bec, findElement {using=xpath, value=//span[text()='Account']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.216, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/36/0j05svmj3bl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64803}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64803/devtoo..., se:cdpVersion: 120.0.6099.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 941481b4ff8122f80c5da8e2f2784bec]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.216)
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1.2', java.version: '21'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [941481b4ff8122f80c5da8e2f2784bec, findElement {using=xpath, value=//span[text()='Account']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.216, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/36/0j05svmj3bl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64803}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64803/devtoo..., se:cdpVersion: 120.0.6099.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 941481b4ff8122f80c5da8e2f2784bec
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-at baseFunctions.CommonFunctions.loginSetup(CommonFunctions.java:21)
-at testCases.DemoClass.login(DemoClass.java:18)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectProducts -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.DemoClass@79924b]" started-at="2024-01-13T10:49:38 IST" name="login" finished-at="2024-01-13T10:49:38 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="close()[pri:0, instance:testCases.DemoClass@79924b]" started-at="2024-01-13T10:49:38 IST" name="close" finished-at="2024-01-13T10:49:38 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- validatePageNavigation -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testCases.PageNavigationAndProductValidationTest@6b927fb]" started-at="2024-01-14T18:17:22 IST" name="close" finished-at="2024-01-14T18:17:22 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- testCases.DemoClass -->
+      </class> <!-- testCases.PageNavigationAndProductValidationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
